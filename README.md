@@ -1,6 +1,6 @@
 # Simple Messenger
 
-Simple chat box.
+Simple chat box.<br />
 TOOLS: PHP, OOP, MySQL, jQuery, JavaScript, AJAX, JSON
 LIVE LINK: http://messenger.mygidas.lt/
 It has pagination, age calculation, email and full name validation.
