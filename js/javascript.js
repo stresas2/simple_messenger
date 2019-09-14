@@ -19,14 +19,6 @@ const calculateAge = birthday => {
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 };
 
-// Message data object
-const data = {
-  fullname: "",
-  age: "",
-  email: "",
-  message: ""
-};
-
 $(document).ready(() => {
   // Dissable form
   $("form").submit(() => {
@@ -151,6 +143,13 @@ $(document).ready(() => {
   };
 
   $("#submit").click(() => {
+    // Message data object
+    const data = {
+      fullname: "",
+      age: "",
+      email: "",
+      message: ""
+    };
     // Declare input values
     const fullname = $("#fullname").val();
     const birthdate = $("#birthdate").val();
