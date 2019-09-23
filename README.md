@@ -1,10 +1,15 @@
 # Simple Messenger
 
 Simple chat box.<br />
-TOOLS: PHP, OOP, MySQL, jQuery, JavaScript, AJAX, JSON<br />
-LIVE LINK: http://messenger.mygidas.lt/<br />
-It has pagination, age calculation, email and full name validation.<br />
+LIVE LINK: http://board.mygidas.lt/<br />
+FRONT-END dalis (visi duomenys išsisaugo LocalStorage)<br /><br />
 
+Susideda iš 5 puslapių:
+* index.html - Švieslentė su numeriukais;
+* newclient.html - Kliento registraciją;
+* specialist.html - Aptarnaujančio specialisto tinklalapis;
+* checkclient.html - Kliento galimos operacijos;
+* calendar.html - Kalendorius su statistika;
 
 ## Installation
 
