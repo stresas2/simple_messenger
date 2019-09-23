@@ -13,10 +13,6 @@ Susideda iš 5 puslapių:
 
 Kiekvienas puslapis turi savo JS failiuką, kuris jį valdo.
 
-## Installation
-
-Ikeliati į serverį ir galima naudotis.
-
 ## Data
 
 Kiekvienas klientas aprašomas JSON formato objektu:
@@ -33,7 +29,7 @@ Kiekvienas klientas aprašomas JSON formato objektu:
  ```
  
  Duomenys išsaugojami į du LocalStorage kintamuosius:
- * Klientai - Visi įrašai nepriklausomai ar aptarnauti ar ne;
+ * Klientai - Visi įrašai nepriklausomai ar aptarnauti ar ne, atvaizduoti pagal tikrą eiliškumą;
  * Atlikt - Visi aptarnauti klientai;
 
 ## Usage
@@ -46,3 +42,23 @@ Veikimas:
 * Duomenys atvaizduojami pagal eiliškumą, kuo labiau į viršų tuo greičiau prieis eilę;
 * Pirmas, atvaizduotas kita spalva yra dabar aptarnaujamas;
 * Dešinėja pusėja apskaičiuojamas preleminarus laukimo laikas kiekvienam numeriui. Paimi visi duomenys iš istorijos kuriuos aptarnavimo specialistas ir suskaičiuojamas jų vidurkis ir dauginama iš eilės numerio pas specialistą, jeigu nėra duomenų nustatomas vidutinis laikas 6min;
+
+### newclient.html - Kliento registraciją;
+
+Veikimas:
+* Nuskaitomas pasirinktas specialistas ir įvestas vardas;
+* Visi laukeliai privalo būti užpildyti;
+* Vardas privalo būti sudarytas tik iš raidžių, turi būti vienas žodis ir negalimas vardas - Vardenis;
+* Neatitikus aukščiau išvardintų kriterijų išmetamas pranešimas;
+* Teisingai užpildus sugeneruojamas apsaugos kodas ir aukščias rastas laisvas numeris ir šitie duomenys išmetami pranešime vartotojui;
+
+### specialist.html - Aptarnaujančio specialisto tinklalapis;
+Veikimas:
+* Kairėja pusėja yra mygtukas "Įrašyti Klientus" nuspaudus juos vykdoma "AJAX" užklausa į "Klientai.JSON", nuskaitomi duomenys ir įrašomi į LocalStorage "Klientai", neradus failiuko išmetamas pranešimas;
+* Dešinėja pusėja pasirinkus specialistą pasileidžia programa ir atspausdinami specialisto klientai lentelėja su jų numeriu ir vardu;
+* Pirmam Klientui lentėja priskiriamas "timestamp" kuomet jis pradedamas aptarnauti ir išsaugojami duomenys LocalStorage;
+* Paspaudus mygtuką "Aptarnauti" nuskaitomas dabartinis laikas ir laikas kada jis buvo pradėtas aptarnauto iš to apskaičiuojamas jo aptarnavimo laikas, kuris atvaizduojamas lentelėja. Kliento duomenys pasipildo aptarnavimo laiku ir aptarnavimo statusu "done: true" ir duomenys išsaugojami LocalStorage - Klientai ir Atlikti;
+* Lentelė perspaudinama įvykus LocalStorage pasikeitimams;
+
+### checkclient.html - Kliento galimos operacijos;
+Veikimas:
