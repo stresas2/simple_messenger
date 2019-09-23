@@ -68,3 +68,11 @@ Veikimas:
 * Nuspausdus "Pavėlinti vizitą" Nuskaitomas numeris ir kodas, surandamas jo vizito eiliškumas LocalStorage ir jis perstumiamas žemyn, perstumiant atsižvelgiama, kad būtų perstumiamas būtinai pas jo pasirinktą specialistą, jeigu nėra kur perstumti išmetamas pranešimas, kad jis yra paskutinis eilėja;
 
 ### calendar.html - Kalendorius su statistika;
+Veikimas:
+* Nuskaitomi duomenys iš LocalStorage;
+* Duomenys išfiltruojami pagal aptarnavimo datą;
+* Suskaičiuojami kiek kiekviena diena buvo vizitų, pagal vizitų skaičiu keičiasi dienos fonas;
+* Apskaičiuojama kuri dienos pusė buvo laisvesnė ir atvaizduojama prie dienos numeriuko, P - pirmoji dienos pusė iki 12h, A - antroji dienos pusė, N - Nebuvo klientų visai.  
+* Galima tikrinti visus metų menesius nepriklausomai ar buvo vizitų ar ne;
+* Galima tikrinti pagal specialistą arba žiūręti bendra visu specialistų statistiką;
+* Kalendorius pritaikytas vaizduoti per visą ekrana ir prisitaiko prie ekrano dydžio;
