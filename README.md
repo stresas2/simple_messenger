@@ -1,6 +1,6 @@
 # Board
 
-Simple chat box.<br />
+Numeriukų švieslentė ir jos valdymas<br />
 LIVE LINK: http://board.mygidas.lt/<br />
 FRONT-END dalis (visi duomenys išsisaugo LocalStorage)<br /><br />
 
@@ -13,7 +13,7 @@ Susideda iš 5 puslapių:
 
 ## Installation
 
-Upload all file in your server, edit db.php file with your data base information, export "messages.sql" file in your database and you ready to use! 
+Ikeliati į serverį ir galima naudotis
 
 ## Usage
 
