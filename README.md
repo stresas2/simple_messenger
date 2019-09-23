@@ -1,4 +1,4 @@
-# Simple Messenger
+# Board
 
 Simple chat box.<br />
 LIVE LINK: http://board.mygidas.lt/<br />
