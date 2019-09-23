@@ -62,3 +62,9 @@ Veikimas:
 
 ### checkclient.html - Kliento galimos operacijos;
 Veikimas:
+* Nuskaito įvestą numeriuką ir nuspaudus "Tikrinti laiką" parodo laukimo laiką, jeigu numeriukas neegzistuoja arba jau buvo aptarnautas išmeta pranešima;
+* Laukimo laikas atnaujinamas kas 5s. Yra virtualus laikrodukas kuris iš suskaičiuoto laukimo laiko atiminėja praėjusį laiką, jeigu numeriukas arba numeriuko eiliškumas pasikeitė laikrodukas nusinuliną ir pradeda iš naujo skaičiuoti, taip duomenys pastoviai atsinaujina priklausomai kaip keičiasi vidutinis specialisto aptarnavimo laikas. Pasidarius laukimo laikui 0 pridedama minutė ir vėl skaičiuojamas, kol klientas prieina eilę;
+* Nuspaudus "Atšaukti vizitą" nuskaitomas įvestas numeriukas ir kodas, patikrinami ar jie sutampa su tais kurie išsaugoti LocalStorage, jeigu ne išmetamas pranešimas, priešingu atveju vizitas atšaukiamas jis ištrinimas iš LocalStorage ir išmetas pranšimas apie sėkmingą atšaukimą;
+* Nuspausdus "Pavėlinti vizitą" Nuskaitomas numeris ir kodas, surandamas jo vizito eiliškumas LocalStorage ir jis perstumiamas žemyn, perstumiant atsižvelgiama, kad būtų perstumiamas būtinai pas jo pasirinktą specialistą, jeigu nėra kur perstumti išmetamas pranešimas, kad jis yra paskutinis eilėja;
+
+### calendar.html - Kalendorius su statistika;
